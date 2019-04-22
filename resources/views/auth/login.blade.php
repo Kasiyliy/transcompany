@@ -63,7 +63,14 @@
                                     </a>
                                 @endif
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <a class="btn btn-link" href="http://transcompany.kz">
+                                        На сайт
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
 
                             </div>
                             <div class="col-md-4">

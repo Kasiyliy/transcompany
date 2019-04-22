@@ -37,10 +37,11 @@
 <div class="wrapper">
 
     <header class="main-header">
-        <a href="{{route('home')}}" class="logo">
+        <a href="http://transcompany.kz" class="logo">
             <span class="logo-mini"><b>T</b>KZ</span>
             <span class="logo-lg"><b>Transcompany</b>KZ</span>
         </a>
+
         <nav class="navbar navbar-static-top">
             <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                 <span class="sr-only">Toggle navigation</span>
