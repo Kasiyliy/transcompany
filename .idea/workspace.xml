@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="997b3fec-9807-45e2-abaf-575994dcf32b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +57,9 @@
         <counts>
           <entry key="env" value="1" />
           <entry key="gitignore" value="1" />
+          <entry key="htaccess" value="1" />
           <entry key="js" value="1" />
-          <entry key="php" value="34" />
+          <entry key="php" value="35" />
           <entry key="sql" value="2" />
           <entry key="users" value="1" />
           <entry key="vehicles" value="1" />
@@ -74,23 +72,26 @@
           <entry key="Database Element" value="2" />
           <entry key="Git file" value="1" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="19" />
+          <entry key="PHP" value="20" />
           <entry key="Scratch" value="2" />
+          <entry key="htaccess" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="12" />
+          <entry key="gitignore" value="19" />
           <entry key="php" value="2589" />
-          <entry key="txt" value="40" />
+          <entry key="txt" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="12" />
           <entry key="Blade" value="2194" />
+          <entry key="Git file" value="19" />
           <entry key="PHP" value="395" />
-          <entry key="PLAIN_TEXT" value="40" />
+          <entry key="PLAIN_TEXT" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -111,7 +112,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -121,13 +122,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+        <entry file="file://$PROJECT_DIR$/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="85" selection-start-line="18" selection-start-column="85" selection-end-line="18" selection-end-column="85" />
-              <folding>
-                <element signature="e#40#56#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="-217" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -136,14 +141,9 @@
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/29ac4d59-5e6b-47a8-956c-287812c3eb53/console.sql">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -155,9 +155,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -231,6 +235,8 @@
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/public/.htaccess" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -360,6 +366,11 @@
             <path>
               <item name="transcompany" type="b2602c69:ProjectViewProjectNode" />
               <item name="transcompany" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="transcompany" type="b2602c69:ProjectViewProjectNode" />
+              <item name="transcompany" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -390,7 +401,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="w&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/routes/web.php&#10;web.php&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/routes/web.php&#10;homec&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/app/Http/Controllers/HomeController.php&#10;vehicle&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/app/Http/Controllers/VehicleController.php&#10;vehc&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/app/Http/Controllers/VehicleController.php&#10;user&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/database/seeds/UsersTableSeeder.php&#10;creauser&#9;null&#9;null&#10;register&#9;null&#9;null&#10;web.ph&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/routes/web.php&#10;role&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/app/Role.php" />
+    <property name="SearchEverywhereHistoryKey" value="giti&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/.gitignore&#10;w&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/routes/web.php&#10;web.php&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/routes/web.php&#10;homec&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/app/Http/Controllers/HomeController.php&#10;vehicle&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/app/Http/Controllers/VehicleController.php&#10;vehc&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/app/Http/Controllers/VehicleController.php&#10;user&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/database/seeds/UsersTableSeeder.php&#10;creauser&#9;null&#9;null&#10;register&#9;null&#9;null&#10;web.ph&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/routes/web.php&#10;role&#9;FILE&#9;file:///Users/air/Desktop/laravel/transcompany/app/Role.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -427,7 +438,7 @@
       <option name="presentableId" value="Default" />
       <updated>1555872183354</updated>
       <workItem from="1555872185311" duration="9119000" />
-      <workItem from="1555920570961" duration="141000" />
+      <workItem from="1555920570961" duration="469000" />
     </task>
     <task id="LOCAL-00001" summary="Almost done,lets test it">
       <created>1555914616592</created>
@@ -436,11 +447,25 @@
       <option name="project" value="LOCAL" />
       <updated>1555914616593</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Links added">
+      <created>1555920768585</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555920768585</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Links added">
+      <created>1555920880103</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555920880103</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9260000" />
+    <option name="totallyTimeSpent" value="9588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -478,7 +503,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Almost done,lets test it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost done,lets test it" />
+    <MESSAGE value="Links added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Links added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env">
@@ -661,13 +687,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -682,6 +705,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="67" column="88" selection-start-line="67" selection-start-column="88" selection-end-line="67" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-217" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
