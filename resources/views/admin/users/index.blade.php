@@ -14,7 +14,8 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>ФИО</th>
+                                    <th>Имя</th>
+                                    <th>Фамилия</th>
                                     <th>Телефон</th>
                                     <th>Email</th>
                                     <th>Роль</th>
@@ -25,6 +26,8 @@
                                 @foreach($users as $user)
                                     <tr>
                                         <td>{{$user->id}}</td>
+                                        <td>{{$user->first_name}}</td>
+                                        <td>{{$user->last_name}}</td>
                                         <td>{{$user->name}}</td>
                                         <td>{{$user->phone_number}}</td>
                                         <td>{{$user->email}}</td>

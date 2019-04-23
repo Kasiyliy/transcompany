@@ -24,7 +24,6 @@ class VehicleController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'name' =>'required',
             'longitude' =>'required',
             'latitude' =>'required',
             'status' =>'required',
@@ -73,7 +72,6 @@ class VehicleController extends Controller
         }
 
         $validator = Validator::make($request->all(), [
-            'name' =>'required',
             'longitude' =>'required',
             'latitude' =>'required',
             'status' =>'required',

@@ -14,12 +14,6 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name">Имя</label>
-                                        <input type="text" name="name" value="{{$vehicle->name}}" class="form-control"
-                                               placeholder="Наименование"
-                                               required>
-                                    </div>
-                                    <div class="form-group">
                                         <label for="name">Государственный номер транспортного средства</label>
                                         <input type="number" name="license_plate" value="{{$vehicle->license_plate}}"
                                                class="form-control"
@@ -29,13 +23,9 @@
                                     <div class="form-group">
                                         <label for="name">Статус</label>
                                         <select name="status" required class="form-control">
-                                            <option {{$vehicle->status === 'Собирается' ? "selected" : '' }}>
-                                                Собирается
-                                            </option>
-                                            <option {{$vehicle->status === 'Едет' ? "selected" : '' }}>Едет</option>
-                                            <option {{$vehicle->status === 'Разбирается' ? "selected" : '' }}>
-                                                Разбирается
-                                            </option>
+                                            <option {{$vehicle->status === 'На погрузке' ? "selected" : '' }}>На погрузке</option>
+                                            <option {{$vehicle->status === 'В пути(едет)' ? "selected" : '' }}>В пути(едет)</option>
+                                            <option {{$vehicle->status === 'Выгружен' ? "selected" : '' }}>Выгружен</option>
                                         </select>
                                     </div>
                                 </div>

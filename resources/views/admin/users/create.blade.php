@@ -13,7 +13,11 @@
                         <form action="{{route('user.store')}}" method="post">
                             <div class="form-group">
                                 <label for="name">Имя</label>
-                                <input type="text" value="{{old('name')}}" name="name" class="form-control" placeholder="Наименование" required>
+                                <input type="text" value="{{old('first_name')}}" name="first_name" class="form-control" placeholder="Имя" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Фамилия</label>
+                                <input type="text" value="{{old('last_name')}}" name="last_name" class="form-control" placeholder="Фмилия" required>
                             </div>
                             <div class="form-group">
                                 <label for="phone_number">Номер телефона</label>

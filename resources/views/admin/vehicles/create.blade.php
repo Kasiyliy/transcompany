@@ -14,11 +14,6 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name">Имя</label>
-                                        <input type="text" name="name" class="form-control" placeholder="Наименование"
-                                               required>
-                                    </div>
-                                    <div class="form-group">
                                         <label for="name">Государственный номер транспортного средства</label>
                                         <input type="number" name="license_plate" class="form-control"
                                                placeholder="Номер" required>
@@ -27,9 +22,9 @@
                                     <div class="form-group">
                                         <label for="name">Статус</label>
                                         <select name="status" required class="form-control">
-                                            <option>Собирается</option>
-                                            <option>Едет</option>
-                                            <option>Разбирается</option>
+                                            <option>На погрузке</option>
+                                            <option>В пути(едет)</option>
+                                            <option>Выгружен</option>
                                         </select>
                                     </div>
                                 </div>

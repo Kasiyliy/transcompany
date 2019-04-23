@@ -15,7 +15,11 @@
                                 <form action="{{Route::currentRouteName() == 'self.user.edit' ? route('self.user.update') : route('user.update' ,['id'=>$user->id])}}" method="post">
                                     <div class="form-group">
                                         <label for="name">Имя</label>
-                                        <input type="text" value="{{$user->name}}" name="name" class="form-control" placeholder="Наименование" required>
+                                        <input type="text" value="{{$user->first_name}}" name="first_name" class="form-control" placeholder="Имя" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Фамилия</label>
+                                        <input type="text" value="{{$user->last_name}}" name="last_name" class="form-control" placeholder="Фамилия" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="phone_number">Номер телефона</label>

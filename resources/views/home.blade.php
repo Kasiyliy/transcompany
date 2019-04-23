@@ -40,7 +40,7 @@
                     @foreach($vehicles as $vehicle )
                         <div class="panel">
                             <div class="panel-header">
-                                <h3><label for="">Наименование:</label> {{$vehicle->name}}</h3>
+                                <h3><label for="">Государственный номер:</label> {{$vehicle->license_plate}}</h3>
                                 <span> <label for="">Статус: </label> {{$vehicle->status}}</span>
                             </div>
                             <div class="panel-body">

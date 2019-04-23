@@ -14,7 +14,7 @@
                             <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Наименование</th>
+                                <th>Гос.номер</th>
                                 <th>Действия</th>
                             </tr>
                             </thead>
@@ -22,7 +22,7 @@
                             @foreach($vehicles as $vehicle)
                                 <tr>
                                     <td>{{$vehicle->id}}</td>
-                                    <td>{{$vehicle->name}}</td>
+                                    <td>{{$vehicle->license_plate}}</td>
                                     <td class="d-flex">
                                         <a href="{{route('vehicle.edit' ,['id'=>$vehicle->id ])}}" class="btn-xs btn btn-primary">Изменить</a>
                                         <a onclick="deleteBtn({{$vehicle->id}})" class="btn-xs btn btn-danger">Удалить</a>

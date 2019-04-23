@@ -30,7 +30,8 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'name' =>'required',
+            'first_name' =>'required',
+            'last_name' =>'required',
             'phone_number' =>'required',
             'email' =>'required| email| unique:users',
             'password' =>'required',
@@ -83,7 +84,8 @@ class UserController extends Controller
         }
 
         $validator = Validator::make($request->all(), [
-            'name' =>'required',
+            'first_name' =>'required',
+            'last_name' =>'required',
             'phone_number' =>'required',
             'email' =>'required| email | unique:users',
             'role_id' =>'required|numeric| min:0',
@@ -147,7 +149,8 @@ class UserController extends Controller
         }
 
         $validator = Validator::make($request->all(), [
-            'name' =>'required',
+            'first_name' =>'required',
+            'last_name' =>'required',
             'phone_number' =>'required',
             'email' =>'required| email | unique:users',
             'role_id' =>'required|numeric| min:0',
