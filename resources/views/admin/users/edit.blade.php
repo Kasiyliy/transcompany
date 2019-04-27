@@ -27,7 +27,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input type="email" value="{{$user->email}}" name="email" class="form-control" placeholder="Email" required>
+                                        <input type="email" disabled="disabled" value="{{$user->email}}" class="form-control" placeholder="Email" required>
                                     </div>
                                     @if(\Illuminate\Support\Facades\Auth::user()->untouchable)
                                     <div class="form-group">

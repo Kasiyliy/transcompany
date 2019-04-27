@@ -87,7 +87,6 @@ class UserController extends Controller
             'first_name' =>'required',
             'last_name' =>'required',
             'phone_number' =>'required',
-            'email' =>'required| email | unique:users',
         ]);
 
         if ($validator->fails()) {
@@ -151,7 +150,6 @@ class UserController extends Controller
             'first_name' =>'required',
             'last_name' =>'required',
             'phone_number' =>'required',
-            'email' =>'required| email | unique:users',
         ]);
 
         if ($validator->fails()) {
