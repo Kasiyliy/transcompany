@@ -88,7 +88,6 @@ class UserController extends Controller
             'last_name' =>'required',
             'phone_number' =>'required',
             'email' =>'required| email | unique:users',
-            'role_id' =>'required|numeric| min:0',
         ]);
 
         if ($validator->fails()) {
@@ -153,7 +152,6 @@ class UserController extends Controller
             'last_name' =>'required',
             'phone_number' =>'required',
             'email' =>'required| email | unique:users',
-            'role_id' =>'required|numeric| min:0',
         ]);
 
         if ($validator->fails()) {

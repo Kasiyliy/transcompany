@@ -29,10 +29,7 @@
                                         <label for="email">Email</label>
                                         <input type="email" value="{{$user->email}}" name="email" class="form-control" placeholder="Email" required>
                                     </div>
-
-                                    @if(!$user->untouchable)
-                                        <input type="hidden" value="{{$user->role_id}}" name="role_id" required>
-                                    @else
+                                    @if(\Illuminate\Support\Facades\Auth::user()->untouchable)
                                     <div class="form-group">
                                         <label for="role">Роль</label>
                                         <select name="role_id" class="form-control">
