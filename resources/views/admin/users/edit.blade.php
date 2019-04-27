@@ -30,7 +30,7 @@
                                         <input type="email" value="{{$user->email}}" name="email" class="form-control" placeholder="Email" required>
                                     </div>
 
-                                    @if($user->untouchable)
+                                    @if(!$user->untouchable)
                                         <input type="hidden" value="{{$user->role_id}}" name="role_id" required>
                                     @else
                                     <div class="form-group">
