@@ -7,23 +7,23 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
 
-    <link rel="stylesheet" href="{{asset("admin/bower_components/bootstrap/dist/css/bootstrap.min.css")}}">
-    <link rel="stylesheet" href="{{asset("admin/bower_components/font-awesome/css/font-awesome.min.css")}}">
+    <link rel="stylesheet" href="{{secure_asset("admin/bower_components/bootstrap/dist/css/bootstrap.min.css")}}">
+    <link rel="stylesheet" href="{{secure_asset("admin/bower_components/font-awesome/css/font-awesome.min.css")}}">
 
-    <link rel="stylesheet" href="{{asset("admin/dist/css/AdminLTE.min.css")}}">
-    <link rel="stylesheet" href="{{asset("admin/dist/css/skins/_all-skins.min.css")}}">
-    <link rel="stylesheet" href="{{asset("css/jquery.select.css")}}">
-    <link href="{{ asset('css/toastr.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{secure_asset("admin/dist/css/AdminLTE.min.css")}}">
+    <link rel="stylesheet" href="{{secure_asset("admin/dist/css/skins/_all-skins.min.css")}}">
+    <link rel="stylesheet" href="{{secure_asset("css/jquery.select.css")}}">
+    <link href="{{ secure_asset('css/toastr.css') }}" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css"
-          href="{{asset("admin/bower_components/datatable/css/dataTables.bootstrap.min.css")}}"/>
+          href="{{secure_asset("admin/bower_components/datatable/css/dataTables.bootstrap.min.css")}}"/>
     <link rel="stylesheet" type="text/css"
-          href="{{asset("admin/bower_components/datatable/css/responsive.bootstrap.min.css")}}"/>
+          href="{{secure_asset("admin/bower_components/datatable/css/responsive.bootstrap.min.css")}}"/>
     <link rel="stylesheet" type="text/css"
-          href="{{asset("admin/bower_components/datatable/css/scroller.bootstrap.min.css")}}"/>
+          href="{{secure_asset("admin/bower_components/datatable/css/scroller.bootstrap.min.css")}}"/>
     <link rel="stylesheet" type="text/css"
-          href="{{asset("admin/bower_components/daterangepicker/daterangepicker.css")}}"/>
-    <link href="{{asset("admin/bower_components/select2/select2.css")}}"
+          href="{{secure_asset("admin/bower_components/daterangepicker/daterangepicker.css")}}"/>
+    <link href="{{secure_asset("admin/bower_components/select2/select2.css")}}"
           el="stylesheet"/>
     <style>
         .panel {
@@ -143,33 +143,33 @@
 </div>
 
 
-<script src="{{asset("admin/bower_components/jquery/dist/jquery.min.js")}}"></script>
-<script src="{{asset("admin/bower_components/bootstrap/dist/js/bootstrap.min.js")}}"></script>
-<script src="{{asset("js/jquery.select.js")}}"></script>
-<script src="{{asset("js/number.divider.js")}}"></script>
-<script src="{{asset("admin/dist/js/adminlte.min.js")}}"></script>
-<script src="{{asset('js/toastr.js')}}"></script>
-<script src="{{asset('js/bootbox.all.min.js')}}"></script>
+<script src="{{secure_asset("admin/bower_components/jquery/dist/jquery.min.js")}}"></script>
+<script src="{{secure_asset("admin/bower_components/bootstrap/dist/js/bootstrap.min.js")}}"></script>
+<script src="{{secure_asset("js/jquery.select.js")}}"></script>
+<script src="{{secure_asset("js/number.divider.js")}}"></script>
+<script src="{{secure_asset("admin/dist/js/adminlte.min.js")}}"></script>
+<script src="{{secure_asset('js/toastr.js')}}"></script>
+<script src="{{secure_asset('js/bootbox.all.min.js')}}"></script>
 
-<script type="text/javascript" src="{{asset("admin/bower_components/datatable/js/jquery.datatables.min.js")}}"></script>
+<script type="text/javascript" src="{{secure_asset("admin/bower_components/datatable/js/jquery.datatables.min.js")}}"></script>
 <script type="text/javascript"
-        src="{{asset("admin/bower_components/datatable/js/dataTables.bootstrap.min.js")}}"></script>
+        src="{{secure_asset("admin/bower_components/datatable/js/dataTables.bootstrap.min.js")}}"></script>
 <script type="text/javascript"
-        src="{{asset("admin/bower_components/datatable/js/dataTables.responsive.min.js")}}"></script>
+        src="{{secure_asset("admin/bower_components/datatable/js/dataTables.responsive.min.js")}}"></script>
 <script type="text/javascript"
-        src="{{asset("admin/bower_components/datatable/js/responsive.bootstrap.min.js")}}"></script>
+        src="{{secure_asset("admin/bower_components/datatable/js/responsive.bootstrap.min.js")}}"></script>
 <script type="text/javascript"
-        src="{{asset("admin/bower_components/datatable/js/dataTables.scroller.min.js")}}"></script>
+        src="{{secure_asset("admin/bower_components/datatable/js/dataTables.scroller.min.js")}}"></script>
 <script type="text/javascript"
-        src="{{asset("admin/bower_components/datatable/js/dataTables.fixed-header.min.js")}}"></script>
+        src="{{secure_asset("admin/bower_components/datatable/js/dataTables.fixed-header.min.js")}}"></script>
 <script type="text/javascript"
-        src="{{asset("admin/bower_components/datatable/js/datatable.sum.js")}}"></script>
+        src="{{secure_asset("admin/bower_components/datatable/js/datatable.sum.js")}}"></script>
 
 <script type="text/javascript"
-        src="{{asset("admin/bower_components/daterangepicker/moment.js")}}"></script>
+        src="{{secure_asset("admin/bower_components/daterangepicker/moment.js")}}"></script>
 <script type="text/javascript"
-        src="{{asset("admin/bower_components/daterangepicker/daterangepicker.js")}}"></script>
-<script src="{{asset("admin/bower_components/select2/select2.js")}}"></script>
+        src="{{secure_asset("admin/bower_components/daterangepicker/daterangepicker.js")}}"></script>
+<script src="{{secure_asset("admin/bower_components/select2/select2.js")}}"></script>
 
 <script>
     $.ajaxSetup({
