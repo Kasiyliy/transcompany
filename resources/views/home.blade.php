@@ -44,7 +44,7 @@
                                 <span> <label for="">Статус: </label> {{$vehicle->status}}</span>
                             </div>
                             <div class="panel-body">
-                                <div id="map{{$vehicle->id}}" style="width: 100%; height: 400px">
+                                <div id="map{{$vehicle->id}}" style="width: 100%; height: 650px">
                             </div>
                             <div class="panel-footer">
                                 <p>
