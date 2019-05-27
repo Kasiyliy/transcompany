@@ -47,9 +47,9 @@
                                 <div id="map{{$vehicle->id}}" style="width: 100%; height: 550px">
                             </div>
                             <div class="panel-footer">
-                                <p>
+                                <h3>
                                      Описание: {{$vehicle->description}}
-                                </p>
+                                </h3>
                             </div>
                         </div>
                     @endforeach
