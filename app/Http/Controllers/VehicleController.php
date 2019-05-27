@@ -28,6 +28,7 @@ class VehicleController extends Controller
             'latitude' =>'required',
             'status' =>'required',
             'license_plate' =>'required',
+            'description' =>'required',
         ]);
 
         if ($validator->fails()) {
@@ -76,6 +77,7 @@ class VehicleController extends Controller
             'latitude' =>'required',
             'status' =>'required',
             'license_plate' =>'required',
+            'description' =>'required',
         ]);
 
         if ($validator->fails()) {

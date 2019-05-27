@@ -27,6 +27,12 @@
                                             <option>Выгружен</option>
                                         </select>
                                     </div>
+
+
+                                    <div class="form-group">
+                                        <label for="name">Описание</label>
+                                        <textarea name="description" required></textarea>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
 

@@ -19,6 +19,7 @@ class CreateVehiclesTable extends Migration
             $table->string('latitude');
             $table->string('longitude');
             $table->string('status');
+            $table->text('description');
             $table->timestamps();
         });
     }

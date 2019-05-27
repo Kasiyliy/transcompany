@@ -28,6 +28,12 @@
                                             <option {{$vehicle->status === 'Выгружен' ? "selected" : '' }}>Выгружен</option>
                                         </select>
                                     </div>
+
+
+                                    <div class="form-group">
+                                        <label for="name">Описание</label>
+                                        <textarea name="description" required>{{$vehicle->description}}</textarea>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
 
