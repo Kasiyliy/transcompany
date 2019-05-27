@@ -32,7 +32,7 @@
 
                                     <div class="form-group">
                                         <label for="name">Описание</label>
-                                        <textarea name="description" required>{{$vehicle->description}}</textarea>
+                                        <textarea class="form-control" name="description" required>{{$vehicle->description}}</textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
