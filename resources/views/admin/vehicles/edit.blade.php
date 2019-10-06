@@ -12,7 +12,7 @@
                     <div class="panel-body">
                         <form action="{{route('vehicle.update', ['id' => $vehicle->id])}}" method="post">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="name">Государственный номер транспортного средства</label>
                                         <input type="number" name="license_plate" value="{{$vehicle->license_plate}}"
@@ -35,27 +35,27 @@
                                         <textarea class="form-control" name="description" required>{{$vehicle->description}}</textarea>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                {{--<div class="col-md-6">--}}
 
-                                    <div class="form-group">
-                                        <label for="name">Выберите с карты местоположение?</label>
-                                        <div id="map" style="width: 100%; height: 400px">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="longitude">Долгота</label>
-                                            <input type="text" class="form-control" readonly id="longitude"
-                                                   value="{{$vehicle->longitude}}" name="longitude"
-                                                   placeholder="Longitude" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="latitude">Широта</label>
-                                            <input type="text" name="latitude" readonly class="form-control"
-                                                   value="{{$vehicle->latitude}}" id="latitude" placeholder="Latitude"
-                                                   required>
-                                        </div>
+                                    {{--<div class="form-group">--}}
+                                        {{--<label for="name">Выберите с карты местоположение?</label>--}}
+                                        {{--<div id="map" style="width: 100%; height: 400px">--}}
+                                        {{--</div>--}}
+                                        {{--<div class="form-group">--}}
+                                            {{--<label for="longitude">Долгота</label>--}}
+                                            {{--<input type="text" class="form-control" readonly id="longitude"--}}
+                                                   {{--value="{{$vehicle->longitude}}" name="longitude"--}}
+                                                   {{--placeholder="Longitude" required>--}}
+                                        {{--</div>--}}
+                                        {{--<div class="form-group">--}}
+                                            {{--<label for="latitude">Широта</label>--}}
+                                            {{--<input type="text" name="latitude" readonly class="form-control"--}}
+                                                   {{--value="{{$vehicle->latitude}}" id="latitude" placeholder="Latitude"--}}
+                                                   {{--required>--}}
+                                        {{--</div>--}}
 
-                                    </div>
-                                </div>
+                                    {{--</div>--}}
+                                {{--</div>--}}
 
 
                                 {{csrf_field()}}

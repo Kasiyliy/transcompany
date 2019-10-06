@@ -13,7 +13,7 @@ class VehicleController extends Controller
     public function index()
     {
         $vehicles = Vehicle::all();
-        return view('admin.vehicles.index' , compact("vehicles"));
+        return view('admin.vehicles.index', compact("vehicles"));
     }
 
     public function create()
@@ -24,69 +24,76 @@ class VehicleController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'longitude' =>'required',
-            'latitude' =>'required',
-            'status' =>'required',
-            'license_plate' =>'required',
-            'description' =>'required',
+//            'longitude' => 'required',
+//            'latitude' => 'required',
+            'status' => 'required',
+            'license_plate' => 'required',
+            'description' => 'required',
         ]);
 
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator);
-        }else{
-            $vehicle =  new Vehicle();
+        } else {
+            $vehicle = new Vehicle();
             $vehicle->fill($request->all());
+            $vehicle->latitude = '0';
+            $vehicle->longitude = '0';
             $vehicle->save();
-            Session::flash('success' , 'Транспартное средство успешно добавлена!');
+            Session::flash('success', 'Транспартное средство успешно добавлена!');
             return redirect()->back();
         }
     }
 
 
-    public function delete($id){
+    public function delete($id)
+    {
         $vehicle = Vehicle::find($id);
-        if($vehicle){
+        if ($vehicle) {
             $vehicle->delete();
-            Session::flash('success' , 'Транспартное средство успешно удалена!');
-        }else{
-            Session::flash('error' , 'Транспартное средство не существует!');
+            Session::flash('success', 'Транспартное средство успешно удалена!');
+        } else {
+            Session::flash('error', 'Транспартное средство не существует!');
         }
         return redirect()->back();
     }
 
 
-    public function edit($id){
+    public function edit($id)
+    {
         $vehicle = Vehicle::find($id);
-        if(!$vehicle){
-            Session::flash('error' , ' Транспартное средство не существует!');
+        if (!$vehicle) {
+            Session::flash('error', ' Транспартное средство не существует!');
             return redirect()->back();
         }
 
         return view('admin.vehicles.edit', compact('vehicle'));
     }
 
-    public function update(Request $request, $id){
+    public function update(Request $request, $id)
+    {
         $vehicle = Vehicle::find($id);
-        if(!$vehicle){
-            Session::flash('error' , 'Транспартное средство не существует!');
+        if (!$vehicle) {
+            Session::flash('error', 'Транспартное средство не существует!');
             return redirect()->back();
         }
 
         $validator = Validator::make($request->all(), [
-            'longitude' =>'required',
-            'latitude' =>'required',
-            'status' =>'required',
-            'license_plate' =>'required',
-            'description' =>'required',
+//            'longitude' =>'required',
+//            'latitude' =>'required',
+            'status' => 'required',
+            'license_plate' => 'required',
+            'description' => 'required',
         ]);
 
         if ($validator->fails()) {
-            Session::flash('error' , 'Ошибка!');
+            Session::flash('error', 'Ошибка!');
             return redirect()->back()->withErrors($validator);
-        }else{
+        } else {
             $vehicle->fill($request->all());
+            $vehicle->latitude = '0';
+            $vehicle->longitude = '0';
             $vehicle->save();
-            Session::flash('success' , 'Транспартное средство успешно обновлена!');
+            Session::flash('success', 'Транспартное средство успешно обновлена!');
             return redirect()->back();
         }
     }

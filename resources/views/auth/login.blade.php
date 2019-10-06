@@ -75,10 +75,12 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-check">
-                                    Не зарегистрированы?
+                                    <span>
+                                        Не зарегистрированы?
                                     <a class="btn btn-link" href="{{route('register')}}">
                                         Регистрация
                                     </a>
+                                    </span>
                                 </div>
                             </div>
                         </div>
